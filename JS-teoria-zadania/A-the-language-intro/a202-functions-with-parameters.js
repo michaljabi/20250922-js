@@ -15,26 +15,34 @@
  */
 
 // Deklaracja:
-function sumTwoNumbers(a, b) {
+function sumTwoNumbers(a, b) { // a i b to parametry
 	return a + b
 }
 
 // Wywołanie:
-const result = sumTwoNumbers(10, 20)
+const result = sumTwoNumbers(10, 20) //arguments  10 i 20 to argumenty
 
 
 // #1 Zadanie:
 // Pokaż wynik dodawania 10 + 20 na ekranie
-
+console.log(result)
+console.log( sumTwoNumbers(10, 20) )
 
 // #2 Zadanie:
 // Policz ile to 30 + 560
-
+console.log( sumTwoNumbers(30, 560) )
 
 // #3 Zadanie:
 // co jeśli byśmy mieli policzyć 450 + 200 + 100 ?
 
+console.log(450 + 200 + 100);
 
+console.log( sumTwoNumbers(sumTwoNumbers(450, 200), 100) )
+
+
+const partialSum = sumTwoNumbers(450, 200);
+const myResult = sumTwoNumbers(partialSum, 100)
+console.log(myResult);
 
 /* ---------------------- */
 // Funkcje po 2015 roku mogą posiadać parametry domyślne:
