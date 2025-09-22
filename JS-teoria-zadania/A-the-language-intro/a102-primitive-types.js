@@ -40,10 +40,11 @@ console.log(myString.toLowerCase());
 console.log(myString.charAt(4));
 console.log('Hello World'.charAt(6));
 console.log('Hello World'.slice(-5));
-console.log('Ha'.repeat(10));
+console.log('H'.repeat(10));
 console.log(String.fromCharCode(65));
 // więcej: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+console.log('?'.repeat(2))
 // NUMBERS
 // ----------------------------------------------------------------------------------------------
 // Operacje, które są popularne na numerach:

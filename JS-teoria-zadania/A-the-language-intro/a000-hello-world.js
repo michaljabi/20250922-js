@@ -7,7 +7,7 @@ console.log(20 + 1 + 2000);
 
 function sayHello() {
    console.log('a' + 'b')
-   return;
+   return '2';
 }
 
 
