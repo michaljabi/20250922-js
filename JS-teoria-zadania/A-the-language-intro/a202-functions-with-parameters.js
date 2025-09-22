@@ -22,6 +22,8 @@ function sumNumbers(a = 0, b = 0, c = 0) { // a i b to parametry
 	return a + b + c
 }
 
+// sumNumbers('?' , '!', 'a', ''); //=
+
 console.log( sumNumbers(450, 200, 100) )
 console.log( sumNumbers(10, 20) )
 // console.log( 10 + 20 + undefined )
