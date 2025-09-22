@@ -11,14 +11,14 @@
  *
  */
 
+let x = 1;
+x = 10;
+
+const $_xAZaz09_$ = 2;
+
 // Deklaracja:
 function sayHello() {
 	console.log('Witaj!')
-
-
-
-
-	
 }
 
 // Wywołanie:
@@ -29,6 +29,17 @@ sayHello()
 // Jak szybko powtórzyć te zapisy 4 razy na ekranie:
 // chcemy widzieć 4 pudełka jedno pod drugim
 
-console.log('  ____________')
-console.log('|  in the box  |')
-console.log('  ------------')
+function showTheBox() { // Function declaration - deklarowanie funkcji
+	console.log('  ____________')
+	console.log('|  in the box  |')
+	console.log('  ------------')
+	// return '1bc'
+}
+
+showTheBox(); // to jest function CALL - wywołanie funkcji
+showTheBox();
+showTheBox();
+
+const result = showTheBox();
+
+console.log(result)
