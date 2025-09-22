@@ -9,9 +9,9 @@
  */
 
 // najpierw string:
-const helloWorld = 'Hello World'
-console.log(helloWorld, 'is:', typeof helloWorld)
-console.log(`Length of "${helloWorld}" is: ${helloWorld.length}`)
+const helloWorld = 'Hello World'                                
+console.log(helloWorld, 'is:', typeof helloWorld)                               
+console.log(`Length of "${helloWorld}" is: ${helloWorld.length}`)                               
 
 // potem number:
 const myLuckyNumber = 12333
