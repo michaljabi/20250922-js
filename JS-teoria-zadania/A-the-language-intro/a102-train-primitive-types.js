@@ -102,6 +102,13 @@ console.log(`?
 
 console.log(`2 + 2 = ${2+2}`)
 
+console.log(`2 + 2 = 2+2`)
+console.log(`2 + 2 = ${2+2}`)
+
+// Matematyka działa w porządku :)
+console.log(2 + 2 * 2);
+console.log((2 + 2) * 2);
+
 console.log(`${hello} ${almostWorld.slice(-5)}`)
 
 //------------------------------------------------------------

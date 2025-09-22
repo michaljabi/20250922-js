@@ -9,24 +9,24 @@
  */
 
 // najpierw string:
-let helloWorld = 'Hello World'
+const helloWorld = 'Hello World'
 console.log(helloWorld, 'is:', typeof helloWorld)
 console.log(`Length of "${helloWorld}" is: ${helloWorld.length}`)
 
 // potem number:
-helloWorld = 12333
-console.log(helloWorld, 'is:', typeof helloWorld)
-console.log('plus 10 is:', helloWorld + 10)
+const myLuckyNumber = 12333
+console.log(myLuckyNumber, 'is:', typeof myLuckyNumber)
+console.log('plus 10 is:', myLuckyNumber + 10)
 
 // potem boolean:
-helloWorld = true
-console.log(helloWorld, 'is:', typeof helloWorld)
-console.log('AND with true is:', helloWorld && true)
+const myFlag = true
+console.log(myFlag, 'is:', typeof myFlag)
+console.log('AND with true is:', myFlag && true)
 
 // potem undefined:
-helloWorld = undefined
-console.log(helloWorld, 'is:', typeof helloWorld)
-console.log(helloWorld, 'means no value')
+let notDecided;
+console.log(notDecided, 'is:', typeof notDecided)
+console.log(notDecided, 'means no value')
 
 // #1 Zadanie:
 // Zrefaktoryzuj - zmień powyższe zapisy na poprawny kod, dodając więcej zmiennych przechowujących wartości

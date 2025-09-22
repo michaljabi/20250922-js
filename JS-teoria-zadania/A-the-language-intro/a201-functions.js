@@ -14,6 +14,11 @@
 // Deklaracja:
 function sayHello() {
 	console.log('Witaj!')
+
+
+
+
+	
 }
 
 // Wywołanie:
