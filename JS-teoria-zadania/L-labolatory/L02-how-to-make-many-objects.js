@@ -40,15 +40,15 @@ console.log(point2d);
 
 // żeby na bazie jednego kształtu zrobić KILKA obiektów, wystarczy opakować tworzenie obiektu w FUNKCJĘ
 
-function makeCar(name, manufacturer) {
+function makeCar(name, manufacturer = 'Mercedes') {
     return { 
         name: name,
         manufacturer: manufacturer
     };
 }
 
-const car3 = makeCar('Audi', 'A6');
-const car4 = makeCar('Audi', 'A6');
+const car3 = makeCar('A6', 'Audi');
+const car4 = makeCar('A6', 'Audi');
 
 
 console.log(car3)
@@ -61,3 +61,6 @@ console.log(car4)
 
 console.log(car3 == car4)
 console.log(car3 === car4)
+
+
+console.log(makeCar('AMG'))
