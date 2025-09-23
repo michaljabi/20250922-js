@@ -15,6 +15,15 @@
 // Przykład tablicy:
 const mutableArray = [ 'a', 'b', 'c', 'd', 'z', 'k' ];
 
+mutableArray.push('q')
+mutableArray.push('q')
+mutableArray.push('z')
+mutableArray.push('q')
+
+mutableArray.push('G', 'H')
+
+console.log(mutableArray);
+
 console.log('HELLO')
 console.log('HELLO'.length);
 
