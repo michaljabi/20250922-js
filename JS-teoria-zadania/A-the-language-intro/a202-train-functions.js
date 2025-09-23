@@ -4,11 +4,11 @@
 // wywołana z argumentem 'Michał' wyświetli napis: 'Witaj Michał'
 // Zastanów się nad poprawnymi nazwami funkcji i jej parametru
 
-function say(a = 'Nieznajomy') {
-    // console.log('Witaj', a, 9)
-    // console.log('Witaj ' + a + ' ' + 9)
-    console.log(`Witaj ${a}`)
+function sayHelloTo(name = 'Nieznajomy') {
+    //console.log('Witaj', name, 9)
+    //console.log('Witaj ' + name + ' ' + 9)
+    console.log(`Witaj ${name}`)
 }
 
-say()
-say('Michał')
+sayHelloTo()
+sayHelloTo('Michał')
