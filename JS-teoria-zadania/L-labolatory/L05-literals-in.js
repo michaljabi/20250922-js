@@ -30,7 +30,19 @@ console.log(new Date().toString());
 console.log(new Date('2025-09-23T02:00:00Z').toString());
 
 
-
-console.log(new Error('Coś poszło nie tak'));
+// console.log(new Error('Coś poszło nie tak'));
 
 console.log('...');
+
+
+
+
+/*
+    .....user ?
+*/
+function getUserName(user) {
+    return user.name;
+}
+
+
+console.log(getUserName({ name: 'test' }))
