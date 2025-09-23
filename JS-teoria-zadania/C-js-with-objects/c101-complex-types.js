@@ -67,6 +67,7 @@ console.log(user.name2);
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 for(let key in myUser) {
 	console.log(key);
+	console.log(myUser[key]);
 }
 
 
@@ -74,7 +75,7 @@ for(let key in myUser) {
 const tree = {
 	branch: {
 		leaf: 'green',
-		isRoot: false
+		isRoot: false,
 	}
 }
 
@@ -82,7 +83,7 @@ console.log(tree.branch.leaf)
 
 // #3 Zadanie:
 // Pokaż na konsoli wartość isRoot w obiekcie tree:
-
+console.log(tree.branch.isRoot)
 
 /**
  * W odróżnieniu od typów prostych (primitives).
