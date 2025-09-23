@@ -1,3 +1,12 @@
+function makeCartItem(name = '', price = 0, tax = 0.23) {
+	return {
+		name: name,
+		price: price,
+		tax: tax
+	}
+}
+
+
 /* #1 Zadanie:
 Zdefiniuj i przypisz obiekt shoppingCartItem z polami:
 	name (typu :string)
@@ -7,11 +16,13 @@ Zdefiniuj i przypisz obiekt shoppingCartItem z polami:
 	Samodzielnie wymyśl ich wartości
 */
 
-const shoppingCartItem = {
-	name: 'Phone',
-	price: 1000,
-	tax: 0.23
-};
+const shoppingCartItem = makeCartItem('Phone', 1000);
+
+// {
+// 	name: 'Phone',
+// 	price: 1000,
+// 	tax: 0.23
+// };
 
 /* #2 Zadanie:
 Zdefiniuj i przypisz obiekt shoppingCartItem2 z polami:
@@ -24,11 +35,14 @@ Zdefiniuj i przypisz obiekt shoppingCartItem2 z polami:
 Pokaż w console.log sumy cen(price) i podatków(tax) obydwu produktów jako wartość koszyka
 */
 
-const shoppingCartItem2 = {
-	name: 'Laptop',
-	price: 2000,
-	tax: 0.23
-};
+const shoppingCartItem2 =  makeCartItem('Laptop', 2000);
+// {
+// 	name: 'Laptop',
+// 	price: 2000,
+// 	tax: 0.23
+// };
+
+
 
 const nettoPrice = shoppingCartItem.price + shoppingCartItem2.price;
 
