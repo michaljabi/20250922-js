@@ -16,7 +16,7 @@ const cat = {
 	whiskers: 'long',
 	eyes: 2,
 	voice() {
-		return 'Mrauuu';
+		return 'Mrauuu'
 	},
 	alwaysLandsOn4Feet: true
 };
@@ -33,7 +33,9 @@ console.log(cat.eyes)
 
 // Na początku user posiada tylko pole "name"
 const myUser = {
-	name: 'Janina'
+	name: 'Janina',
+	age: 30,
+	isAdmin: true
 };
 
 // Potem dynamicznie dodawane jest pole "lastName" z wartością:
@@ -50,9 +52,19 @@ console.log(myUser['name'])
 	// a) Nie można mieć kilka tak samo nazwanych pól w obiekcie
 	// b) Jeśli wystąpi taka sytuacja to "wartość ostatniego pola wygrywa"
 
+const user = {
+	name2: 'Krysia',
+	name: 'Adam',
+	name: 'Krzyś',
+}
+
+console.log(user); 
+console.log(user.name); 
+console.log(user.name2); 
 
 
 // Poza dynamicznym zapisem, można "dostać się" do wszystkich pól obiektu - dzięki pętli for...in
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 for(let key in myUser) {
 	console.log(key);
 }
