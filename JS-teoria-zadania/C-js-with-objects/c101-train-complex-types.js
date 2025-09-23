@@ -1,11 +1,18 @@
+// To się wyjaśni jak rozpracujemy `a301` scopes (zakresy);
+let id = 0;
+
+
 function makeCartItem(name = '', price = 0, tax = 0.23) {
+	// let id = 0; `a301` scopes (zakresy)
+	id++;
 	return {
+		// id: Math.floor(Math.random() * 100),
+		id: id,
 		name: name,
 		price: price,
 		tax: tax
 	}
 }
-
 
 /* #1 Zadanie:
 Zdefiniuj i przypisz obiekt shoppingCartItem z polami:
@@ -42,7 +49,8 @@ const shoppingCartItem2 =  makeCartItem('Laptop', 2000);
 // 	tax: 0.23
 // };
 
-
+console.log(shoppingCartItem.id);
+console.log(shoppingCartItem2.id);
 
 const nettoPrice = shoppingCartItem.price + shoppingCartItem2.price;
 
@@ -59,3 +67,5 @@ console.log(`Wartość koszyka to ${nettoPrice} zł netto, co daje ${grossVolume
 
 // #3 Wykaż, że zainicjowanie dwóch nowych pustych obiektów po porównaniu === da nam wartość false.
 // Wyjaśnij dlaczego tak się dzieje
+
+console.log( {} === {} );
