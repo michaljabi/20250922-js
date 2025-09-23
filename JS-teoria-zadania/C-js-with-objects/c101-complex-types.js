@@ -15,7 +15,7 @@
 const cat = {
 	whiskers: 'long',
 	eyes: 2,
-	voice: function () {
+	voice() {
 		return 'Mrauuu';
 	},
 	alwaysLandsOn4Feet: true
@@ -23,8 +23,10 @@ const cat = {
 
 // #1 Zadanie:
 // Pokaż na konsoli wynik działania metody voice
-
-
+console.log(cat.voice())
+console.log(cat.alwaysLandsOn4Feet)
+console.log(cat.eyes)
+// console.log(cat.vo)
 
 
 // Kolejne przykłady:
