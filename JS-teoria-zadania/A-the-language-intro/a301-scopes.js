@@ -19,18 +19,21 @@
 
 
 // a) Module Global SCOPE
-const model = 'Q2'
+// const model = 'Q2'
+
+globalThis.model = 'S1'
 
 function mySuperCar () {
 	// b) local SCOPE of (mySuperCar)
 
 	function getName() {
+		console.log(model)
 		return 'Audi'
 	}
 
 	console.log('Moje super auto to:')
 	console.log(getName())
-	console.log(model)
+	
 }
 
 mySuperCar();

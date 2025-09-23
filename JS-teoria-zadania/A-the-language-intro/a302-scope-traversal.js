@@ -10,20 +10,22 @@
  * Zobacz jak zachowuje się i co pokazuje console.log z linii 28
  *
  * */
+console.log(globalThis)
 
-const myColor = 'red';
+// const myColor = 'red';
 
 function inception() {
-	const myColor = 'cristal';
+	// const myColor = 'cristal';
 
 	function secondDream() {
-		const myColor = 'sapphire';
+		// const myColor = 'sapphire';
 
 		function thirdDream() {
-			const myColor = 'emerald';
+			// const myColor = 'emerald';
 
 			function fourthDream() {
-				const myColor = 'diamond';
+				// const myColor = 'diamond';
+				globalThis.myColor = 'red'
 
 				console.log(myColor);
 			}
