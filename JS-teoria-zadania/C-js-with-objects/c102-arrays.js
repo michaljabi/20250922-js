@@ -13,7 +13,10 @@
  * */
 
 // Przykład tablicy:
-const mutableArray = [ 'a', 'b', 'c', 'd' ];
+const mutableArray = [ 'a', 'b', 'c', 'd', 'z', 'k' ];
+
+console.log('HELLO')
+console.log('HELLO'.length);
 
 // Sprawdzenie długości tablicy
 console.log(mutableArray.length);
@@ -30,8 +33,14 @@ for(let x = 0; x < mutableArray.length; x++) {
 	// wtedy odnosimy się do index'ów tablicy:
 	console.log(mutableArray[x]);
 }
+
+const moreElements = [];
 // jak i składnią pętli "for of"
-for(let element of mutableArray) {
+for(const element of mutableArray) {
+	if(element === 'x') {
+		// break; // jak będzie x to zatrzymaj totalnie
+		continue; // jak będzie x to nie wykonuj logiki niżej, ale "obracaj" się dalej.
+	}
 	console.log(element);
 }
 // jak i wbudowaną metodą forEach
