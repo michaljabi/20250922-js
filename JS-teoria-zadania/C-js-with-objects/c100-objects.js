@@ -7,9 +7,12 @@
  */
 
 // Prosty przykład obiektu:
-const user = {
-	name: 'Marek'
-};
+const user = { name: 'Marek' };
+
+// user = { name: 'Krysia', age: 22, lastName: '' };
+
+// const user2 = new Object({ name: 'Adam' })
+// console.log(user2)
 
 // użycie obiektu:
 console.log(user);
