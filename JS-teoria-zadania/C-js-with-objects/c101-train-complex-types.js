@@ -7,6 +7,12 @@ Zdefiniuj i przypisz obiekt shoppingCartItem z polami:
 	Samodzielnie wymyśl ich wartości
 */
 
+const shoppingCartItem = {
+	name: 'Phone',
+	price: 1000,
+	tax: 0.23
+};
+
 /* #2 Zadanie:
 Zdefiniuj i przypisz obiekt shoppingCartItem2 z polami:
 	name (typu :string)
@@ -17,6 +23,24 @@ Zdefiniuj i przypisz obiekt shoppingCartItem2 z polami:
 
 Pokaż w console.log sumy cen(price) i podatków(tax) obydwu produktów jako wartość koszyka
 */
+
+const shoppingCartItem2 = {
+	name: 'Laptop',
+	price: 2000,
+	tax: 0.23
+};
+
+const nettoPrice = shoppingCartItem.price + shoppingCartItem2.price;
+
+console.log(nettoPrice);
+
+const taxes = shoppingCartItem.price * shoppingCartItem.tax + shoppingCartItem2.price * shoppingCartItem2.tax;
+
+console.log(taxes);
+
+const grossVolume = nettoPrice + taxes;
+
+console.log(`Wartość koszyka to ${nettoPrice} zł netto, co daje ${grossVolume} zł brutto.`)
 
 
 // #3 Wykaż, że zainicjowanie dwóch nowych pustych obiektów po porównaniu === da nam wartość false.
