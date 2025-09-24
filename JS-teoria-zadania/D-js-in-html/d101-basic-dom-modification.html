@@ -6,14 +6,20 @@
     <style>
 
         section#wrapper {
-            background-color: red;
+            background-color: #8aff00;
+        }
+
+        h1 {
+            color: rgb(139, 161, 195);
         }
     </style>
 </head>
 <body>
     <div>hello</div>
     <section id="wrapper"></section>
-    <section > hello 2</section>
+    <h1 > hello 1</h1>
+    <h2 > hello 2</h2>
+    <h3 > hello 2</h3>
     <script>
         /**
          * Praktycznie można "namalować" na DOM wszystko co chccemy używając JavaScript
@@ -22,7 +28,7 @@
          * */
 
          // Array stringów:
-         const animalList = ['parrot', 'cat', 'snake', 'dog'];
+         const animalList = ['parrot', 'cat', 'snake', 'dog', 'turtle'];
 
          // Tworzymy element bazowy: (<ul>)
          const ul = document.createElement('ul');
@@ -32,7 +38,7 @@
              // dla każdej iteracji tworzymy element (<li>)
              const li = document.createElement('li');
              // wpisujemy do niego tekst
-             li.innerText = animal;
+             li.innerHTML = `<strong>${animal}</strong>`;
              // dołączamy do <ul> do którego mamy referencję ul
              ul.appendChild(li)
          }
@@ -41,7 +47,7 @@
          const rootDiv = document.querySelector('section#wrapper');
 
          if(rootDiv) {
-            rootDiv.appendChild(ul);
+            rootDiv.append(ul);
          } else {
             document.body.innerHTML = 'Nie mogę uruchomić aplikacji... błąd (#9182)'
             console.error('root div not found')
