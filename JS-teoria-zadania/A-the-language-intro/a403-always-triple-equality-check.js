@@ -14,20 +14,22 @@
    */
 
   const one = '1';
+
   const otherOne = 1;
   const on = true;
+  
   const off = false;
 
 
-  if ( one == on ) {
+  if ( one === on ) {
     console.log( 'Hello one is on !' );
   }
 
-  if ( [] == off ) {
+  if ( [] === off ) {
     console.log( 'hello' );
   }
 
-  if ( otherOne == one ) {
+  if ( otherOne === one ) {
     console.log( 'Hello World' );
   }
 
