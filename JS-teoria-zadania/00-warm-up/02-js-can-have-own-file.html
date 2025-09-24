@@ -6,5 +6,29 @@
 </head>
 <body>
     <script src="02-own-file.js"></script>
+
+    <script>
+        console.log(helloWorld)
+    </script>
+
+    <!-- NOWOCZESNY sposób (ESM) Ecma Script Modules -->
+    <script type="module"> 
+        const x = 100;
+        console.log(x)
+    </script> 
+
+    <script type="module"> 
+        const x = 200;
+        console.log(x)
+    </script> 
+
+
+    <script type="module"> 
+        import { myLuckyNumber, sayHello } from './02-exmple-esm-file.js'
+        // console.log(notExported) // jeśli plik nie exportuje czegoś jawnie, to nie mogę się do tego dostać
+
+        console.log(myLuckyNumber);
+       sayHello('Michał')
+    </script> 
 </body>
 </html>
