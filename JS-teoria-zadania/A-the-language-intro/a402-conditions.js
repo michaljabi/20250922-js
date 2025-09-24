@@ -20,9 +20,22 @@
  * https://dorey.github.io/JavaScript-Equality-Table/
  * */
 
-let numericCondition = 0;
 
-if(numericCondition === 1) {
+
+
+let numericCondition = 10;
+
+console.log(numericCondition);
+console.log(!numericCondition);
+
+console.log(!0);
+console.log(!'');
+console.log(!{});
+console.log(!null);
+
+console.log(!Boolean(numericCondition));
+
+if(numericCondition === 1 || numericCondition === 10) {
 	console.log('if !')
 } else if (numericCondition){
 	console.log('else if !')
@@ -31,15 +44,17 @@ if(numericCondition === 1) {
 }
 
 
-const x = 100;
+const x = 10;
 const higherThen10 = x > 10;
 const hello = higherThen10 ? 'witaj' : 'żegnaj';
+console.log(hello);
 
 switch(hello) {
 	case 'witaj':
 		console.log('logika do witaj...');
 		break;
 	case 'żegnaj':
+	case 'żegnaj szkoło!':
 		console.log('logika do witaj...');
 		break;
 	default:
@@ -54,6 +69,13 @@ switch(hello) {
 // #2 Przygotuj własny console.log z który napisze "take a " oraz "coat" lub "t-shirt"
 // w zależności od zmiennej weather która może przyjąć wartości "windy" oraz "sunny"
 // wykorzystaj ternary operator
+
+
+
+
+
+
+
 
 // #3 Zadanie:
 // Jaką wartość przyjmie name poniżej?
