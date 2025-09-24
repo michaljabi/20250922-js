@@ -70,7 +70,9 @@ switch(hello) {
 // w zależności od zmiennej weather która może przyjąć wartości "windy" oraz "sunny"
 // wykorzystaj ternary operator
 
+let weather = 'windy';
 
+console.log('take a', weather === 'sunny' ? 't-shirt' : 'coat' )
 
 
 
@@ -82,14 +84,15 @@ switch(hello) {
 // dlaczego tak się dzieje?
 
 
-const name = 0 || false || '' || 'Jacek'
+const name = 0 || false || '' || 'Jacek' || '?' || '??'
 
+console.log(name)
 
 // #4 Zadanie:
 // Popraw isFinal oraz profile tak aby otherName posiadało wartość "Grażyna"
 
-const isFinal = false;
-const profile = '';
+const isFinal = true;
+const profile = ' ';
 const otherName = profile && isFinal && 'Grażyna'
 
 console.log(otherName);
