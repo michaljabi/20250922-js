@@ -9,11 +9,19 @@
     <h1>Hello!</h1>
     <p></p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script>
         const lastElement = _.last([1, 2, 233]);
 
         document.querySelector('p').innerHTML = 'Last element in array is: <b>'+ lastElement + '</b>';
+
+        const myWords = ['komputer', 'słuchawki', 'mikrofon', 'coś...'];
+        const myDroppedWords = _.drop(myWords, 2);
+
+        document.querySelector('p').innerHTML += `
+        <div> Przed: ${myWords.join(' ')}  </div>
+        <div> Po: ${myDroppedWords.join(' ')} </div>
+        `
     </script>
 
     <!--
