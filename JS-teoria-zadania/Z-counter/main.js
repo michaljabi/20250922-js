@@ -11,4 +11,8 @@ btn.addEventListener('click', () => {
     btn.innerText = String(n)
 })
 
+window.addEventListener('resize', (ev) => {
+    console.log('RESIZED!', window.innerWidth, ev.target.innerWidth)
+})
+
 document.body.append(btn)
