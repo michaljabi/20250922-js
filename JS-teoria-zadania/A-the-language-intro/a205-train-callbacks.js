@@ -1,13 +1,27 @@
 
-function getVatTaxRateFromServer(calculations) {
+// PROVIDER:
+function getVatTaxRateFromServer(calculations = (value = 0) => {}) {
+	// console.log(calculations);
 	calculations(0.23)
+	// setTimeout(() => {
+	// 	calculations(0.23)
+	// }, 4000 * Math.random())
+	// calculations(0.1)
 }
 
 // #1 Zadanie:
-// Nie modyfikując funkcji getVatTaxRateFromServer,
-// wywołaj ją i przekaż odpowiedni callback
-// tak aby odebrać wartość podatku i przeliczyć ceny po uwzględnieniu VAT
-// wymyśl te cenę - np. wartość koszyka = 300 zł
-// Przykładowo pokazanie wyniku:
-// console.log(300 + 300 * vatRate) // gdzie vatRate to odebrany argument z callback
+// Odbierz wartość `0.23` i wyświetl na konsoli, nie modyfikując kodu powyżej
 
+
+function getTax(value) {
+	console.log(value);
+}
+
+// tutaj pokaż 0.23
+// CONSUMER 1
+getVatTaxRateFromServer(getTax)
+
+// CONSUMER 2
+getVatTaxRateFromServer((value) => {
+	console.log(value);
+})

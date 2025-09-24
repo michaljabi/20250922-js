@@ -63,6 +63,10 @@
             console.log('JEST KLIK!')
         })
 
+        setTimeout(() => {
+            console.log('Hello after 2 sec.')
+        }, 2000)
+
         function addFruitToList(name) {
 		  if(!name.trim()) {
 			return;
